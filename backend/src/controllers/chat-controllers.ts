@@ -30,6 +30,7 @@ export const generateChatCompletion = async (
 
     let pythonOutput = '';
     pythonProcess.stdout.on('data', (data) => {
+      console.log(data)
       pythonOutput += data.toString();
     });
 
