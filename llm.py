@@ -3,7 +3,6 @@ import os
 from gradio_client import Client
 import re 
 import io
-from bs4 import BeautifulSoup
 
 # Receive arguments from Node.js
 arg_from_node = sys.argv[1]
