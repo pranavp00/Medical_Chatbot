@@ -12,10 +12,10 @@ const Logo = () => {
     >
       <Link to={"/"}>
         <img
-          src="openai.png"
-          alt="openai"
-          width={"30px"}
-          height={"30px"}
+          src="g01.png"
+          alt="icon"
+          width={"50px"}
+          height={"50px"}
           className="image-inverted"
         />
       </Link>{" "}
@@ -27,7 +27,7 @@ const Logo = () => {
           textShadow: "2px 2px 20px #000",
         }}
       >
-        <span style={{ fontSize: "20px" }}>MERN</span>-GPT
+        <span style={{ fontSize: "20px" }}>HealthGuardian AI</span>
       </Typography>
     </div>
   );

@@ -103,12 +103,11 @@ const Chat = () => {
           >
             {/* {auth?.user?.name[0]} */}
           </Avatar>
-          <Typography sx={{ mx: "auto", fontFamily: "work sans" }}>
-            You are talking to a ChatBOT
-          </Typography>
-          <Typography sx={{ mx: "auto", fontFamily: "work sans", my: 4, p: 3 }}>
-            You can ask some questions related to Knowledge, Business, Advices,
-            Education, etc. But avoid sharing personal information
+          
+          <Typography sx={{ mx: "auto", fontFamily: "work sans", my: 2, p: 2 }}>
+            You can ask about symptoms, possible diseases, treatment recommendations,
+            or even book an appointment with a nearby specialist.
+            Avoid sharing personal medical information for privacy.
           </Typography>
           <Button
             onClick={handleDeleteChats}
@@ -137,21 +136,11 @@ const Chat = () => {
           px: 3,
         }}
       >
-        <Typography
-          sx={{
-            fontSize: "40px",
-            color: "white",
-            mb: 2,
-            mx: "auto",
-            fontWeight: "600",
-          }}
-        >
-          Model - GPT 3.5 Turbo
-        </Typography>
+        
         <Box
           sx={{
             width: "100%",
-            height: "60vh",
+            height: "68vh",
             borderRadius: 3,
             mx: "auto",
             display: "flex",

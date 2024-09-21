@@ -28,9 +28,25 @@ const Login = () => {
     }
   }, [auth]);
   return (
-    <Box width={"100%"} height={"100%"} display="flex" flex={1}>
-      <Box padding={8} mt={8} display={{ md: "flex", sm: "none", xs: "none" }}>
-        <img src="airobot.png" alt="Robot" style={{ width: "400px" }} />
+    <Box width={"100%"} height={"100%"} display="flex" flex={1}
+    // sx={{
+    //   width: '100%',
+    //   height: '300px',
+    //   backgroundImage: 'url(F:/coding/medical_chatbot/MERN-AI-ChatBot-final/frontend/public/background.jpg)', // Image placed in the 'public' folder
+    //   backgroundSize: 'cover',
+    //   backgroundPosition: 'center',
+    //   borderRadius: '8px', // Optional, for rounded corners
+    // }}
+    >
+      <Box padding={8} mt={8} display={{ md: "flex", sm: "none", xs: "none" }}
+      sx={{
+        width: '100%',
+        height: '300px',
+        backgroundImage: 'url(F:/coding/medical_chatbot/MERN-AI-ChatBot-final/frontend/public/background.jpg)', // Image placed in the 'public' folder
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        borderRadius: '8px', // Optional, for rounded corners
+      }} >
       </Box>
       <Box
         display={"flex"}

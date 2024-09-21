@@ -12,18 +12,9 @@ const Footer = () => {
           marginTop: 60,
         }}
       >
-        <p style={{ fontSize: "30px", textAlign: "center", padding: "20px" }}>
-          Built With love by
-          <span>
-            <Link
-              style={{ color: "white" }}
-              className="nav-link"
-              to={"https://youtube.com/indiancoders"}
-            >
-              Indian Coders
-            </Link>
-          </span>
-          💘
+        <p style={{ fontSize: "30px", textAlign: "center", padding: "5px" }}>
+          Built  by Team Ruyma
+          
         </p>
       </div>
     </footer>
