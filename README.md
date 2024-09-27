@@ -138,5 +138,5 @@ Please adhere to this project's `code of conduct`.
 ## Contact
 If you have any questions or suggestions about this project, feel free to contact:
 
-- Email: adityran1405@gmail.com
+- Email: adityaran1405@gmail.com
 - GitHub: https://github.com/pranavp00
