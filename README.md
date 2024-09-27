@@ -93,6 +93,9 @@ In a separate terminal, navigate to the frontend directory and start the fronten
 ## Demo
 
 - SIGN-UP/LOGIN :
+  ![PHOTO-2024-09-27-20-47-56](https://github.com/user-attachments/assets/ded06632-0a6a-41f0-816b-36818181033c)
+![PHOTO-2024-09-27-20-48-35](https://github.com/user-attachments/assets/5b6dc8dc-f35c-4b88-8dee-f28653843d2e)
+
 - CHATBOT :
 - SEARCH FOR DOCTORS AND BOOKING APPOINTMENT :
 
