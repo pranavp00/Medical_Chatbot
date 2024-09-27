@@ -146,13 +146,15 @@ Please adhere to this project's `code of conduct`.
 ### Team Name - Team Ruyuma
 
 ### Team Members:
-- **Pranav Pillai** - LLM Specialist
-- **Suyash Utekar** - Backend Developer
-- **Aditya Randive** - Frontend Developer
+- **Pranav Pillai** - Built the LLM model and optimized model performance
+- **Suyash Utekar** - Handled backend development and API integration
+- **Aditya Randive** - Worked on frontend design and implementation
 
 
 ## Contact
 If you have any questions or suggestions about this project, feel free to contact:
 
-- Email: adityaran1405@gmail.com
+- **Suyash Utekar** - Email: suyashutekar130707@gmail.com
+- **Aditya Randive** - Email: adityaran1405@gmail.com
+
 - GitHub: https://github.com/pranavp00
