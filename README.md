@@ -97,7 +97,19 @@ In a separate terminal, navigate to the frontend directory and start the fronten
 ![PHOTO-2024-09-27-20-48-35](https://github.com/user-attachments/assets/5b6dc8dc-f35c-4b88-8dee-f28653843d2e)
 
 - CHATBOT :
+  ![PHOTO-2024-09-27-21-00-11](https://github.com/user-attachments/assets/7eea68a4-d826-460a-bc12-536d639478be)
+
+
 - SEARCH FOR DOCTORS AND BOOKING APPOINTMENT :
+  ![PHOTO-2024-09-27-21-01-04](https://github.com/user-attachments/assets/975554b0-e635-4aba-a434-5efece552f46)
+![PHOTO-2024-09-27-21-01-18](https://github.com/user-attachments/assets/c3a04409-2109-4f1f-9cc2-76b8196d4d14)
+![PHOTO-2024-09-27-21-01-48](https://github.com/user-attachments/assets/8789e39e-ba93-4d52-b479-a70406f12813)
+![PHOTO-2024-09-27-21-02-27](https://github.com/user-attachments/assets/71fbe6e6-b215-4f89-b749-3754c08a540b)
+
+  
+
+
+
 
 
 
