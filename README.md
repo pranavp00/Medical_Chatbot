@@ -142,6 +142,14 @@ See `contributing.md` for ways to get started.
 
 Please adhere to this project's `code of conduct`.
 
+## Team
+### Team Name - Team Ruyuma
+
+### Team Members:
+- **Pranav Pillai** - LLM Specialist
+- **Suyash Utekar** - Backend Developer
+- **Aditya Randive** - Frontend Developer
+
 
 ## Contact
 If you have any questions or suggestions about this project, feel free to contact:
