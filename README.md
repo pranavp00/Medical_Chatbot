@@ -24,6 +24,7 @@ The Medical Chatbot is an AI-driven chatbot designed to assist users in identify
 Navigate to the backend directory
 ```bash
   cd backend
+  npm install
 
 ```
 Activate your Python virtual environment (if not already activated):
@@ -69,7 +70,7 @@ In a separate terminal, navigate to the frontend directory and start the fronten
 
 ```
 ##### Acess the Chatbot:
-- Once both the backend and frontend servers are running, open your browser and navigate to the provided local development URL (usually http://localhost:3000 or similar) to start interacting with the Medical Chatbot.
+- Once both the backend and frontend servers are running, open your browser and navigate to the provided local development URL (usually http://localhost:5000 or similar) to start interacting with the Medical Chatbot.
 
 ## Usage/Examples
 
