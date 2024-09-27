@@ -1,5 +1,4 @@
 import sys
-import os
 import io
 from gradio_client import Client
 # Receive arguments from Node.js

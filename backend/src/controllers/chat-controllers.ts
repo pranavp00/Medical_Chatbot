@@ -24,7 +24,7 @@ export const generateChatCompletion = async (
     user.chats.push({ content: message, role: "user" });
 
     // Call Python script
-    const pythonScript = 'F:/coding/medical_chatbot/MERN-AI-ChatBot-final/llm.py';
+    const pythonScript = 'llm.py';
     const dynamicValue = chats.map(({ content }) => content).join('\n');
     const pythonProcess = spawn('python', ['-X', 'utf8', pythonScript, dynamicValue]);
 

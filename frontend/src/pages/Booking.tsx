@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Box, TextField, Button, Typography } from "@mui/material";
 import Footer from "../components/footer/Footer";
 import { useTheme, useMediaQuery } from "@mui/material";
@@ -24,54 +24,51 @@ const Booking = () => {
 
   // Search doctors based on disease and location
   const handleSearch = async () => {
-    // Simulated doctor list
-    const simulatedDoctors: Doctor[] = [
-      {
-        name: "Dr. Indu Bubna",
-        specialization: "Pulmonologist",
-        hospital: "Lung Care Clinic",
-        location: "Malad West, Mumbai",
-        profileLink: "https://www.practo.com/mumbai/doctor/dr-indu-bubna-pulmonologist?practice_id=1130035&specialization=Tuberculosis&referrer=doctor_listing&page_uid=0d1eae88-77b1-4b8c-91f9-229c9a3799bf&category_name=symptom&category_id=306"
-      },
-      {
-        name: "Dr. Avya Bansal",
-        specialization: "Pulmonologist",
-        hospital: "Lung Care Clinic",
-        location: "Bandra West, Mumbai",
-        profileLink: "https://www.practo.com/mumbai/doctor/avya-bansal-pulmonologist?practice_id=1304929&specialization=Tuberculosis&referrer=doctor_listing&page_uid=0d1eae88-77b1-4b8c-91f9-229c9a3799bf&category_name=symptom&category_id=306"
-      },
-      {
-        name: "Dr. Harish Chafle",
-        specialization: "Pulmonologist",
-        hospital: "Gleneagles Hospitals",
-        location: "Parel, Mumbai",
-        profileLink: "https://www.practo.com/mumbai/doctor/dr-harish-chafle-pulmonologist?practice_id=982258&specialization=Tuberculosis&referrer=doctor_listing&page_uid=0d1eae88-77b1-4b8c-91f9-229c9a3799bf&category_name=symptom&category_id=306"
-      },
-      {
-        name: "Dr. Sarthak Rastogi",
-        specialization: "Pulmonologist",
-        hospital: "Sushrut Hospital and Research Center",
-        location: "Chembur East, Mumbai",
-        profileLink: "https://www.practo.com/mumbai/doctor/dr-sarthak-a-rastogi-pulmonologist?practice_id=611951&specialization=Tuberculosis&referrer=doctor_listing&page_uid=0d1eae88-77b1-4b8c-91f9-229c9a3799bf&category_name=symptom&category_id=306"
-      },
-      {
-        name: "Dr. Hemil Jasani",
-        specialization: "Pulmonologist",
-        hospital: "Inspire Lungs and Eye Clinic",
-        location: "Chembur East, Mumbai",
-        profileLink: "https://www.practo.com/mumbai/doctor/hemil-jasani-pulmonologist?practice_id=1413378&specialization=Tuberculosis&referrer=doctor_listing&page_uid=0d1eae88-77b1-4b8c-91f9-229c9a3799bf&category_name=symptom&category_id=306"
-      },
-    ];
-    
-    setDoctorsList(simulatedDoctors);
+    if (disease && location) {
+      try {
+        const response = await fetch("http://localhost:5000/api/v1/doc/scrape", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            disease,
+            location,
+          }),
+        });
+  
+        if (!response.ok) {
+          throw new Error("Failed to fetch doctors");
+        }
+  
+        const data = await response.json();
+        
+        // Set the doctorsList state with the received data
+        setDoctorsList(data.doctors);
+  
+        console.log("Doctors List:", data.doctors); // This will log the doctors list to the console
+      } catch (error) {
+        console.error("Error fetching doctors:", error);
+      }
+    } else {
+      console.log("Please provide both disease and location.");
+    }
   };
 
   // Booking function to redirect to Practo profile
   const handleBooking = () => {
-    if (doctorName) {
-      // Redirect to Practo profile URL
-      window.location.href = `https://www.practo.com/mumbai/doctor/hemil-jasani-pulmonologist?practice_id=1413378&specialization=Tuberculosis&referrer=doctor_listing&page_uid=0d1eae88-77b1-4b8c-91f9-229c9a3799bf&category_name=symptom&category_id=306`;
-    }
+    // Find the doctor in the doctorsList by matching the name
+  const selectedDoctor = doctorsList.find(
+    (doctor) => doctor.name.toLowerCase() === doctorName.toLowerCase()
+  );
+
+  if (selectedDoctor) {
+    // Redirect to the doctor's profile link in the same tab
+    window.location.href = selectedDoctor.profileLink;
+  } else {
+    // Handle the case where the doctor is not found
+    console.error("Doctor not found. Please select a valid doctor from the list.");
+  }
   };
 
   return (
@@ -182,7 +179,7 @@ const Booking = () => {
                   <strong>Location:</strong> {doctor.location}
                 </Typography>
                 <Typography variant="body1">
-                <a href={doctor.profileLink} target="_blank" rel="noopener noreferrer" style={{ color: '#00fffc', textDecoration: 'underline' }}>https://www.practo.com/mumbai/{doctor.name}
+                <strong>Link: </strong> <a href={doctor.profileLink} target="_blank" rel="noopener noreferrer" style={{ color: '#00fffc', textDecoration: 'underline' }}>https://www.practo.com/mumbai/{doctor.name}
           </a>
           </Typography>
               </Box>
