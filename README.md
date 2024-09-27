@@ -48,6 +48,14 @@ Install `gradio_client` and other dependencies:
   pip install gradio_client
 
 ```
+First create a new file in backend folder and name it as `.env`, Paste the below things in `.env` file and add the values of these on you own.
+```bash
+  MONGODB_URL=
+  JWT_SECRET=
+  PORT=5000
+  COOKIE_SECRET=
+
+```
 #### Frontend Setup:
 Navigate to the frontend directory:
 ```bash
