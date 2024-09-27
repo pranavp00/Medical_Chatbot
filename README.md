@@ -24,9 +24,14 @@ The Medical Chatbot is an AI-driven chatbot designed to assist users in identify
 Navigate to the backend directory
 ```bash
   cd backend
+
+```
+Install backend dependencies:
+```bash
   npm install
 
 ```
+
 Activate your Python virtual environment (if not already activated):
 ```bash
   'For Windows'
