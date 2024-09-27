@@ -1,7 +1,7 @@
 
 # HealthGuardian AI - A MEDICAL CHATBOT
 
-The Medical Chatbot is an AI-driven chatbot designed to assist users in identifying potential medical conditions based on their symptoms. This chatbot leverages natural language processing (NLP) to understand user inputs and provides suggestions or information about possible conditions. It aims to offer accessible health insights for early awareness and support for users before they seek professional medical consultation.
+HealthGuardian AI is a Medical Chatbot which is an AI-driven chatbot designed to assist users in identifying potential medical conditions based on their symptoms. This chatbot leverages natural language processing (NLP) to understand user inputs and provides suggestions or information about possible conditions. It aims to offer accessible health insights for early awareness and support for users before they seek professional medical consultation.
 
 ## Features
 
